@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "VerificadorChequeEspecial",
+            "request": "launch",
+            "mainClass": "VerificadorChequeEspecial",
+            "projectName": "DesafioControleFluxo_685d66db"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
