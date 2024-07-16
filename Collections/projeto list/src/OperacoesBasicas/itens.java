@@ -26,10 +26,10 @@ public int getQuant(){
 
 @Override
 public String toString(){
-    return "Item{" +
-                        "nome='" + nome + '\''+
-                        ", preco=" + preco +
-                        ", quant=" + quant +
-                        '}';
+    return "Item " +
+                        nome + '\''+
+                        ", preco = " + preco +
+                        ", quant = " + quant
+                        ;
     }       
 }
