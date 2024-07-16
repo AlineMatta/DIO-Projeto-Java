@@ -6,7 +6,7 @@ import iphone.telefone;
 public class App {
     public static void main(String [] args) throws Exception{
         pod pod = new pod();
-        pod.tocarMusica();
+        pod.pausar();
 
         telefone telefone = new telefone();
         telefone.atender();
