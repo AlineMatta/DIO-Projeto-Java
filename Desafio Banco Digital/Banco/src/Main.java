@@ -10,7 +10,6 @@ public class Main {
         Conta cc = new ContaCorrente(); 
         cliente.setConta(cc);
         
-        // Exibir o menu de operações enquanto o usuário não desejar deslogar
         boolean sair = false;
         while (!sair) {
             int opcao = exibirMenu();
@@ -32,12 +31,9 @@ public class Main {
                     System.out.println("Opção inválida. Escolha novamente.");
             }
         }
-
-        // Fechar o scanner ao finalizar
         CadastroCliente.fecharScanner();
     }
 
-    // Método para exibir o menu de operações
     private static int exibirMenu() {
         @SuppressWarnings("resource")
         Scanner scanner = new Scanner(System.in);
@@ -55,26 +51,23 @@ public class Main {
         System.out.print("Digite o valor de saque: ");
         double valor = scanner.nextDouble();
 
-        // Acessar a conta do cliente e realizar o saque
         cliente.getConta().sacar(valor);
 
         System.out.println("Saque realizado com sucesso!");
     }
 
-    // Método para realizar operação de depósito
     private static void depositar(Cliente cliente) {
         @SuppressWarnings("resource")
         Scanner scanner = new Scanner(System.in);
         System.out.print("Digite o valor a ser depositado: ");
         double valor = scanner.nextDouble();
 
-        // Acessar a conta do cliente e realizar o depósito
         cliente.getConta().depositar(valor);
 
         System.out.println("Depósito realizado com sucesso!");
     }
 
-    // Método para realizar operação de transferência
+
     private static void transferir(Cliente cliente) {
         @SuppressWarnings("resource")
         Scanner scanner = new Scanner(System.in);
