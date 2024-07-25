@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import dio.gof.model.Cliente;
+import dio.gof.service.impl.ClienteService;
 
 @RestController
 @RequestMapping("clientes")
