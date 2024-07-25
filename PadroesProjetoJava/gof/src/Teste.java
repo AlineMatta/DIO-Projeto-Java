@@ -1,5 +1,3 @@
-
-
 import dio.gof.singleton.Singleton;
 import facade.facade;
 import strategy.Comportamento;
